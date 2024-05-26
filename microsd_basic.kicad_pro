@@ -428,11 +428,11 @@
         "wire_width": 6
       },
       {
-        "bus_width": 12,
+        "bus_width": 30,
         "clearance": 0.1524,
         "diff_pair_gap": 0.1524,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.3085,
+        "diff_pair_width": 0.77,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
@@ -449,17 +449,11 @@
       "version": 3
     },
     "net_colors": null,
-    "netclass_assignments": null,
-    "netclass_patterns": [
-      {
-        "netclass": "USB data",
-        "pattern": "/USB_D-_FIL"
-      },
-      {
-        "netclass": "USB data",
-        "pattern": "/USB_D+_FIL"
-      }
-    ]
+    "netclass_assignments": {
+      "/USB_FIL_D+": "USB data",
+      "/USB_FIL_D-": "USB data"
+    },
+    "netclass_patterns": []
   },
   "pcbnew": {
     "last_paths": {
